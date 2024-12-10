@@ -2,6 +2,10 @@ import Image from "next/image";
 import AverageRisksSection from "./components/AverageRisksSection";
 import VisionMissionSection from "./components/VisionMissionSection";
 import ConnectSection from "./components/ConnectSection";
+import TestimonialSlider from "./components/TestimonialSlider";
+import TestimonialCarousel from "./components/TestimonialCarousel";
+import Recognitions from "./components/Recognitions";
+import Footer from "./components/Footer";
 export default function Home() {
   return (
     <header className="bg-gray-50">
@@ -93,7 +97,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="relative flex flex-col items-center justify-center bg-gray-50 h-screen overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center bg-gray-50 md:h-screen overflow-hidden">
         {/* Rain GIF Background */}
         <div className="absolute inset-0 flex justify-center">
           <div className="relative w-1/2 h-full">
@@ -134,6 +138,9 @@ export default function Home() {
       <AverageRisksSection/>
       <VisionMissionSection/>
       <ConnectSection/>
+      <TestimonialCarousel/>
+    
+      <Footer/>
     </header>
   );
 }
