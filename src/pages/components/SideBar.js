@@ -1,6 +1,6 @@
 "useClient"
 import React, { useEffect, useRef, useState } from "react";
-import { useGSAP } from "./cs";  
+import { useGSAP } from "./customHooks";  
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
